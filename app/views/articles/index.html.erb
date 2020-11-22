@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Articles ✑</h1>
+<% @articles.each do |article| %>
+  <h3><%= article.title %></h3>
+  <p><%= article.content %></p>
+  <%= link_to "Show details", article_path(article) %>
+  <br>
+  <br>
+  <br>
+<% end %>
+<%= link_to "retour à la page d'acceuil", root_path, class:"btn-primary p-2 rounded" %>
+</div>

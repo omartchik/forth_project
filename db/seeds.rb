@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "start seeds "
+  first  = Article.create(title: "Techno", content: "lreom ierem urpari taparis de la meriu orata oizaeriiu")
+  second  = Article.create(title: "Techno", content: "lreom ierem urpari taparis de la meriu orata oizaeriiu")
+puts "end seeds "
