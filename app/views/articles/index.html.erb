@@ -3,6 +3,9 @@
 <% @articles.each do |article| %>
   <h3><%= article.title %></h3>
   <p><%= article.content %></p>
+  <% article.comments.each do |comment| %>
+    <p><%= comment.content %></p>
+  <% end %>
   <%= link_to "Show details", article_path(article) %>
   <br>
   <br>
